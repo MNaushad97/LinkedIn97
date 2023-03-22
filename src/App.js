@@ -1,21 +1,16 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Edit <code>src/App.js</code> and save to reload.
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        {/* with  react-router-dom v6 Switch is now Routes */}
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
