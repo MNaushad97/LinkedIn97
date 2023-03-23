@@ -49,6 +49,8 @@ const Nav = styled.nav`
     height: 34px;
     @media (max-width: 768px) {
       padding: 0 5px; //tb lr
+      width: 25%;
+      height: auto;
     }
   }
 `;
@@ -73,6 +75,7 @@ const SignIn = styled.a`
   font-size: 16px;
   font-weight: 600;
   line-height: 40px;
+  right: 12px;
   padding: 10px 24px;
   border-radius: 24px;
   box-shadow: inset 0 0 0 1px #0a66c2;
@@ -108,7 +111,7 @@ const Hero = styled.div`
     width: 55%;
     color: #2977c9;
     font-size: 56px;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 70px;
     padding-bottom: 0;
     @media (max-width: 768px) {
@@ -126,7 +129,7 @@ const Hero = styled.div`
     height: 670px;
     @media (max-width: 768px) {
       top: 230px;
-      width: initial;
+      width: auto;
       position: initial;
       height: initial;
     }
@@ -150,12 +153,11 @@ const Google = styled.button`
   border-radius: 28px;
   background-color: #fff;
   vertical-align: middle;
-  z-index: 0;
   transition-duration: 167ms;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
   &:hover {
-    background-color: rgba(207, 207, 207, 0.001);
+    background-color: rgba(207, 207, 207, 0.3);
     color: rgba(0, 0, 0, 0.75);
   }
 `;
