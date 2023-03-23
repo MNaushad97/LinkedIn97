@@ -31,6 +31,9 @@ function Login() {
 }
 export default Login;
 
+//used styled-component as its easier to define elements with named component
+//with tailwind we had to provide className or Id to identify the elements
+
 const Container = styled.div`
   padding: 0px;
 `;
@@ -114,6 +117,7 @@ const Hero = styled.div`
     font-weight: 500;
     line-height: 70px;
     padding-bottom: 0;
+
     @media (max-width: 768px) {
       width: 100%;
       text-align: center;
@@ -122,6 +126,7 @@ const Hero = styled.div`
     }
   }
   img {
+    z-index: 0;
     position: absolute;
     bottom: -2px;
     right: -150px;
@@ -139,6 +144,7 @@ const Hero = styled.div`
 const Form = styled.div`
   margin-top: 100px;
   width: 408px;
+  z-index: 10;
   @media (max-width: 768px) {
     margin-top: 20px;
   }
