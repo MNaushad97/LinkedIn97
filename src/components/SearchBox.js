@@ -3,7 +3,7 @@ import styled from "styled-components";
 function SearchBox() {
   return (
     <>
-      <SearchSection className="opacity-100 relative flex-grow">
+      <SearchSection className="SearchSection opacity-100 relative flex-grow">
         <div className="max-w-xs">
           <input
             type="text"

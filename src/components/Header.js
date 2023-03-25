@@ -1,17 +1,19 @@
 import styled from "styled-components";
+import HeaderNavs from "./HeaderNavs";
 import SearchBox from "./SearchBox";
 
 function Header() {
   return (
     <>
-      <HeaderContainer className="bg-white px-6 w-full fixed top-0 left-0 z-10 border-b-[4px] border-solid border-black border-opacity-[0.08] ">
-        <HeaderContent className=" flex items-center mx-auto my-1 min-h-full max-w-6xl">
-          <Logo className=" mr-2 text-[0]">
+      <HeaderContainer className="HeaderContainer bg-white px-6 w-full fixed top-0 left-0 z-10 border-b-[4px] border-solid border-black border-opacity-[0.08] ">
+        <HeaderContent className="HeaderContent flex items-center mx-auto my-1 min-h-full max-w-6xl">
+          <Logo className="Logo mr-2 text-[0]">
             <a href="/home">
               <img src="/images/home-logo.svg" alt="" />
             </a>
           </Logo>
           <SearchBox />
+          <HeaderNavs />
         </HeaderContent>
       </HeaderContainer>
     </>
