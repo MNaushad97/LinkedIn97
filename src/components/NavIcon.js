@@ -6,7 +6,7 @@ function NavIcon({ img, title }) {
       <Icon className="NavIcon flex items-center ">
         <a
           href="home"
-          className=" relative flex flex-col items-center justify-center min-h-[52px] min-w-[80px] bg-transparent text-sm leading-6 font-normal no-underline
+          className="relative flex flex-col items-center justify-center min-h-[52px] min-w-[80px] bg-transparent text-sm leading-6 font-normal no-underline
           max-[768px]:min-w-[70px]	"
         >
           <img src={`/images/nav-${img}`} alt="" />
