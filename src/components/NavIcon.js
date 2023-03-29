@@ -3,7 +3,11 @@ import styled from "styled-components";
 function NavIcon({ img, title }) {
   return (
     <>
-      <Icon className="NavIcon flex items-center ">
+      <Icon
+        className={`NavIcon flex items-center ${
+          title === "Home" ? "active" : ""
+        }`}
+      >
         <a
           href="home"
           className="relative flex flex-col items-center justify-center min-h-[52px] min-w-[80px] bg-transparent text-sm leading-6 font-normal no-underline
@@ -20,7 +24,7 @@ function NavIcon({ img, title }) {
 }
 export default NavIcon;
 
-const Icon = styled.li`
+export const Icon = styled.li`
   a {
     @media (max-width: 768px) {
       min-width: 60px;

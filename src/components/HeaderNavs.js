@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import NavIcon from "./NavIcon";
+import { Icon } from "./NavIcon";
 
 function HeaderNavs() {
   return (
@@ -11,6 +12,28 @@ function HeaderNavs() {
           <NavIcon img="jobs.svg" title="Jobs" />
           <NavIcon img="messaging.svg" title="Messaging" />
           <NavIcon img="notifications.svg" title="Notifications" />
+          <UserNav>
+            <a>
+              <img src="/images/user.svg" alt="" />
+              <span>
+                Me
+                <img src="/images/down-icon.svg" alt="" />
+              </span>
+            </a>
+
+            <SignOut className="absolute top-11 bg-white rounded-r-md rounded-l-md w-24 h-10 text-base text-center hidden duration-150">
+              <a>Sign Out</a>
+            </SignOut>
+          </UserNav>
+          <Work>
+            <a>
+              <img src="/images/nav-work.svg" alt="" />
+              <span>
+                Work
+                <img src="/images/down-icon.svg" alt="" />
+              </span>
+            </a>
+          </Work>
         </NavIconWrapper>
       </Nav>
     </>
@@ -44,6 +67,38 @@ const NavIconWrapper = styled.ul`
   }
 `;
 
+const SignOut = styled.div``;
+
+const UserNav = styled(Icon)`
+  //this time we have used this so that other(Work) component can borrow styles
+  a > svg {
+    width: 24px;
+    border-radius: 50%;
+  }
+  a > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    ${SignOut} {
+      // have used ${SignOut} in a way to access named style as it is in template literals
+      align-items: center;
+      display: flex; //changed display from none to flex
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+`;
+
+const Work = styled(UserNav)`
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+`;
 /*
 
 

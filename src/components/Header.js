@@ -23,7 +23,7 @@ export default Header;
 
 const HeaderContainer = styled.div``;
 const HeaderContent = styled.div``;
-const Logo = styled.div``;
+const Logo = styled.span``;
 
 /*
 ;
