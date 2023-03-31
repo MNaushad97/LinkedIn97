@@ -3,7 +3,7 @@ import styled from "styled-components";
 function UserInfoSection() {
   return (
     <>
-      <UserInfo>
+      <UserInfo className="px-3 pt-3 pb-4">
         <CardBackground className="bg-[url(/images/card-bg.svg)] h-20 -mt-3 -mx-3 mb-0 bg-cover " />
         <a>
           <Photo className="bg-[url(/images/default-profileImg.svg)] -mt-9 mx-auto mb-3 border-2 border-solid border-white rounded-[50%] w-28 h-28 box-border bg-clip-content" />
@@ -32,7 +32,7 @@ const Link = styled.div``;
 const UserInfo = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   width: 100%;
-  padding: 12px 12px 16px;
+
   word-wrap: break-word;
   word-break: break-word;
 `;
