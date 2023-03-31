@@ -31,8 +31,6 @@ const AddPhotoText = styled.div``;
 const Link = styled.div``;
 const UserInfo = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  width: 100%;
-
   word-wrap: break-word;
   word-break: break-word;
 `;
