@@ -17,7 +17,7 @@ function RightSide() {
         </Recommendation>
       </FollowCard>
       <BannerCard className="bg-yellow">
-        <img src="/images/hiring.png" alt="" />
+        <img className="bg-Cover rounded-md" src="/images/hiring.png" alt="" />
       </BannerCard>
     </Container>
   );
@@ -57,8 +57,5 @@ const Recommendation = styled.a`
 `;
 
 const BannerCard = styled(FollowCard)`
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  padding: 0;
 `;
