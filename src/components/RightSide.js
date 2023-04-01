@@ -25,8 +25,10 @@ function RightSide() {
 
 export default RightSide;
 const Container = styled.div``;
+//using followCard's style also in Banner Card
 const FollowCard = styled.div`
-  width: 300px;
+  width: 276px;
+  margin: 24px;
   text-align: center;
   overflow: hidden;
   margin-bottom: 8px;

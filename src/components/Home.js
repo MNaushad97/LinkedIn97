@@ -9,7 +9,7 @@ function Home() {
     <>
       <Header />
       <Container className="pt-14 max-w-full ">
-        <LayoutOfHomePage className="grid gap-y-6 gap-x-6 my-6 grid-cols-3">
+        <LayoutOfHomePage className="grid gap-y-6 gap-x-6 m-1.5 grid-cols-3">
           <Leftside />
           <InCenter />
           <RightSide />
@@ -27,6 +27,5 @@ const LayoutOfHomePage = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 0 5px;
   }
 `;

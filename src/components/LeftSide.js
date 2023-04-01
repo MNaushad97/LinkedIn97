@@ -3,8 +3,8 @@ import UserInfoSection from "./UserInfoSection";
 
 const Leftside = (props) => {
   return (
-    <Container className="m-4">
-      <ArtCard className=" relative text-center overflow-hidden mb-2 bg-[#fff] border-none rounded-md ">
+    <Container className="m-6 sm:w-[226px] lg:ml-[156px]">
+      <ArtCard className=" relative text-center overflow-hidden mb-2  border-none rounded-md ">
         <UserInfoSection />
         <Widget>
           <a>
@@ -23,7 +23,7 @@ const Leftside = (props) => {
         </Item>
       </ArtCard>
 
-      <CommunityCard>
+      <CommunityCard className="rounded-md">
         <a>
           <span>Groups</span>
         </a>
@@ -49,6 +49,7 @@ const Container = styled.div`
 `;
 
 const ArtCard = styled.div`
+  background-color: #fff;
   transition: box-shadow 83ms;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
 `;
