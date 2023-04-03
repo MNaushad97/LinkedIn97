@@ -3,7 +3,9 @@ import styled from "styled-components";
 function InCenter() {
   return (
     <>
-      <Container className="bg-pink-200 col-span-6 ">share</Container>
+      <Container className="bg-pink-200 sm:col-span-9 lg:col-span-6 ">
+        share
+      </Container>
     </>
   );
 }

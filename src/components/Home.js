@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Header />
-      <Container className="pt-14 sm:mx-[156px] max-w-full ">
+      <Container className="py-14 sm:mx-[156px] max-w-full ">
         <LayoutOfHomePage className="grid gap-y-6 gap-x-6 mt-1.5 pt-6 grid-cols-12">
           <Leftside />
           <InCenter />

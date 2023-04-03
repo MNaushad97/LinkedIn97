@@ -3,7 +3,7 @@ import FeedList from "./FeedList";
 
 function RightSide() {
   return (
-    <Container className="col-span-3 ">
+    <Container className="col-span-3">
       <FollowCard className="h-[370px]">
         <Title className=" inline-flex justify-between items-center text-base w-full text-black/75 font-semibold">
           <h2>LinkedIn News</h2>
@@ -26,6 +26,9 @@ function RightSide() {
 export default RightSide;
 const Container = styled.div`
   //grid-area: rightSide;
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 //using followCard's style also in Banner Card
 const FollowCard = styled.div`
@@ -60,4 +63,7 @@ const Recommendation = styled.a`
 
 const BannerCard = styled(FollowCard)`
   padding: 0;
+  img {
+    width: -webkit-fill-available;
+  }
 `;
