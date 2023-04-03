@@ -3,21 +3,25 @@ import UserInfoSection from "./UserInfoSection";
 
 const Leftside = (props) => {
   return (
-    <Container className="m-6 sm:w-[226px] lg:ml-[156px]">
-      <ArtCard className=" relative text-center overflow-hidden mb-2  border-none rounded-md ">
+    <Container className="col-start-1 col-span-3">
+      <ArtCard className="relative text-center overflow-hidden mb-2  border-none rounded-md ">
         <UserInfoSection />
         <Widget>
+          <a>
+            <div>
+              <span>Who's viewed your profile</span>
+            </div>
+          </a>
           <a>
             <div>
               <span>Connections</span>
               <span>Grow your network</span>
             </div>
-            <img src="/images/widget-icon.svg" alt="" />
           </a>
         </Widget>
         <Item>
           <span>
-            <img src="/images/item-icon.svg" alt="" />
+            <img className="mr-3" src="/images/item-icon.svg" alt="" />
             My Items
           </span>
         </Item>
@@ -45,7 +49,7 @@ const Leftside = (props) => {
 };
 
 const Container = styled.div`
-  grid-area: "leftside";
+  //grid-area: leftSide;
 `;
 
 const ArtCard = styled.div`
@@ -76,7 +80,7 @@ const Widget = styled.div`
       flex-direction: column;
       text-align: left;
       span {
-        font-size: 12px;
+        font-size: 12.5px;
         line-height: 1.333;
         &:first-child {
           color: rgba(0, 0, 0, 0.6);
