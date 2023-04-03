@@ -3,7 +3,7 @@ import FeedList from "./FeedList";
 
 function RightSide() {
   return (
-    <Container className=" col-span-3">
+    <Container className="col-span-3 ">
       <FollowCard className="h-[370px]">
         <Title className=" inline-flex justify-between items-center text-base w-full text-black/75 font-semibold">
           <h2>LinkedIn News</h2>
@@ -16,7 +16,7 @@ function RightSide() {
           <img src="/images/right-icon.svg" alt="" />
         </Recommendation>
       </FollowCard>
-      <BannerCard className="">
+      <BannerCard className="flex justify-center items-center">
         <img className="bg-cover rounded-md" src="/images/hiring.png" alt="" />
       </BannerCard>
     </Container>
@@ -25,7 +25,7 @@ function RightSide() {
 
 export default RightSide;
 const Container = styled.div`
-  //  grid-area: rightSide;
+  //grid-area: rightSide;
 `;
 //using followCard's style also in Banner Card
 const FollowCard = styled.div`

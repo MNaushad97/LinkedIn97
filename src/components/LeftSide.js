@@ -3,7 +3,7 @@ import UserInfoSection from "./UserInfoSection";
 
 const Leftside = (props) => {
   return (
-    <Container className="col-start-1 col-span-3">
+    <Container className="col-span-3">
       <ArtCard className="relative text-center overflow-hidden mb-2  border-none rounded-md ">
         <UserInfoSection />
         <Widget>
