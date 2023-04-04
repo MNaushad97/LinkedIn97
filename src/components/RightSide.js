@@ -16,8 +16,12 @@ function RightSide() {
           <img src="/images/right-icon.svg" alt="" />
         </Recommendation>
       </FollowCard>
-      <BannerCard className="flex justify-center items-center">
-        <img className="bg-cover rounded-md" src="/images/hiring.png" alt="" />
+      <BannerCard className="flex justify-center items-center ">
+        <img
+          className="bg-contain  rounded-md"
+          src="/images/hiring.png"
+          alt=""
+        />
       </BannerCard>
     </Container>
   );
@@ -26,7 +30,7 @@ function RightSide() {
 export default RightSide;
 const Container = styled.div`
   //grid-area: rightSide;
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (min-width: 760px) and (max-width: 1024px) {
     display: none;
   }
 `;
