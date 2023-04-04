@@ -16,8 +16,8 @@ function InCenter() {
           <button>
             <img src="/images/photo-icon.svg" alt="" />
             <span>Photo</span>
-          </button>{" "}
-          I
+          </button>
+
           <button>
             <img src="/images/video-icon.svg" alt="" />
             <span>Video</span>
@@ -28,7 +28,7 @@ function InCenter() {
           </button>
           <button>
             <img src="/images/article-icon.svg" alt="" />
-            <span>Event</span>
+            <span>Write article</span>
           </button>
         </div>
       </Container>
