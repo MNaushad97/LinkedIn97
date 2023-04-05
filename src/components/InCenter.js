@@ -51,11 +51,6 @@ const CommonCard = styled.div`
 `;
 
 const ShareBox = styled(CommonCard)`
-  display: flex;
-  flex-direction: column;
-  color: #958b7b;
-  margin: 0 0 8px;
-  background: white;
   div {
     button {
       outline: none;
