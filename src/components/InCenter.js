@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ShareBoxIcons from "./ShareBoxIcons";
 
 function InCenter() {
   return (
@@ -28,6 +29,9 @@ function InCenter() {
               <span>Write article</span>
             </button>
           </div>
+
+          <ShareBoxIcons icon="article-icon" iconText="Write article" />
+          <ShareBoxIcons icon="article-icon" iconText="Write article" />
         </ShareBox>
       </Container>
     </>
