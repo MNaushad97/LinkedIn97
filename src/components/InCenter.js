@@ -5,16 +5,10 @@ function InCenter() {
   return (
     <>
       <Container className="sm:col-span-9 lg:col-span-6 ">
-        <ShareBox className=" flex flex-col text-[#958b7b] mb-2 bg-white">
+        <ShareBox>
           <div className="ShareBoxDiv flex items-center px-4 pt-2">
-            <img
-              className="w-12 rounded-full mr-2"
-              src="/images/user.svg"
-              alt=""
-            />
-            <button className="flex-grow pl-4 my-2 rounded-full text-left bg-white border border-solid border-black/20">
-              Start a post
-            </button>
+            <img src="/images/user.svg" alt="" />
+            <button>Start a post</button>
           </div>
           <div className="flex flex-wrap justify-around pb-2">
             <ShareBoxIcons icon="photo-icon" iconText="Photo" />
@@ -35,6 +29,10 @@ const Container = styled.div`
 `;
 
 const CommonCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  color: #958b7b;
   text-align: center;
   overflow: hidden;
   margin-bottom: 8px;
@@ -45,17 +43,29 @@ const CommonCard = styled.div`
 `;
 
 const ShareBox = styled(CommonCard)`
-  div {
+  .ShareBoxDiv {
+    img {
+      width: 48px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
     button {
-      outline: none;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      margin: 4px 0;
+      padding-left: 16px;
       color: rgba(0, 0, 0, 0.6);
       font-size: 14px;
       line-height: 1.5;
       min-height: 48px;
       background: transparent;
-      display: flex;
-      align-items: center;
+      outline: none;
       font-weight: 600;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 35px;
+      background-color: white;
+      text-align: left;
     }
   }
 `;
