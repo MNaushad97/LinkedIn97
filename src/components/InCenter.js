@@ -12,9 +12,11 @@ function InCenter() {
               src="/images/user.svg"
               alt=""
             />
-            <button>Start a post</button>
+            <button className="flex-grow pl-4 my-2 rounded-full text-left bg-white border border-solid border-black/20">
+              Start a post
+            </button>
           </div>
-          <div>
+          <div className="flex flex-wrap justify-around pb-2">
             <ShareBoxIcons icon="photo-icon" iconText="Photo" />
             <ShareBoxIcons icon="video-icon" iconText="Video" />
             <ShareBoxIcons icon="event-icon" iconText="Event" />
@@ -51,33 +53,9 @@ const ShareBox = styled(CommonCard)`
       line-height: 1.5;
       min-height: 48px;
       background: transparent;
-      border: none;
       display: flex;
       align-items: center;
       font-weight: 600;
-    }
-    &.ShareBoxDiv {
-      button {
-        margin: 4px 0;
-        flex-grow: 1;
-        padding-left: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 35px;
-        background-color: white;
-        text-align: left;
-      }
-    }
-    &:nth-child(2) {
-      display: flex;
-      flex-wrap: wrap;
-
-      justify-content: space-around;
-      padding-bottom: 4px;
-      button {
-        img {
-          margin: 0 8px 0 -2px;
-        }
-      }
     }
   }
 `;

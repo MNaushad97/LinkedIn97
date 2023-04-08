@@ -28,29 +28,9 @@ const CommonCard = styled.div`
 `;
 
 const IconTextWrapper = styled(CommonCard)`
-  div {
-    button {
-      outline: none;
-      color: rgba(0, 0, 0, 0.6);
-      font-size: 14px;
-      line-height: 1.5;
-      min-height: 48px;
-      background: transparent;
-      border: none;
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-    }
-    &:nth-child(2) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding-bottom: 4px;
-      button {
-        img {
-          margin: 0 8px 0 -2px;
-        }
-      }
+  button {
+    img {
+      margin: 0 8px 0 -2px;
     }
   }
 `;
