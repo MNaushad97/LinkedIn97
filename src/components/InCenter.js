@@ -5,33 +5,21 @@ function InCenter() {
   return (
     <>
       <Container className="sm:col-span-9 lg:col-span-6 ">
-        <ShareBox className="flex flex-col text-[#958b7b] mb-2 bg-white">
-          <div>
-            <img src="/images/user.svg" alt="" />
+        <ShareBox className=" flex flex-col text-[#958b7b] mb-2 bg-white">
+          <div className="ShareBoxDiv flex items-center px-4 pt-2">
+            <img
+              className="w-12 rounded-full mr-2"
+              src="/images/user.svg"
+              alt=""
+            />
             <button>Start a post</button>
           </div>
           <div>
-            <button>
-              <img src="/images/photo-icon.svg" alt="" />
-              <span>Photo</span>
-            </button>
-
-            <button>
-              <img src="/images/video-icon.svg" alt="" />
-              <span>Video</span>
-            </button>
-            <button>
-              <img src="/images/event-icon.svg" alt="" />
-              <span>Event</span>
-            </button>
-            <button>
-              <img src="/images/article-icon.svg" alt="" />
-              <span>Write article</span>
-            </button>
+            <ShareBoxIcons icon="photo-icon" iconText="Photo" />
+            <ShareBoxIcons icon="video-icon" iconText="Video" />
+            <ShareBoxIcons icon="event-icon" iconText="Event" />
+            <ShareBoxIcons icon="article-icon" iconText="Write article" />
           </div>
-
-          <ShareBoxIcons icon="article-icon" iconText="Write article" />
-          <ShareBoxIcons icon="article-icon" iconText="Write article" />
         </ShareBox>
       </Container>
     </>
@@ -68,15 +56,7 @@ const ShareBox = styled(CommonCard)`
       align-items: center;
       font-weight: 600;
     }
-    &:first-child {
-      display: flex;
-      align-items: center;
-      padding: 8px 16px 0px 16px;
-      img {
-        width: 48px;
-        border-radius: 50%;
-        margin-right: 8px;
-      }
+    &.ShareBoxDiv {
       button {
         margin: 4px 0;
         flex-grow: 1;
@@ -90,6 +70,7 @@ const ShareBox = styled(CommonCard)`
     &:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
+
       justify-content: space-around;
       padding-bottom: 4px;
       button {
