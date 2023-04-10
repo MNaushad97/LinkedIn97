@@ -49,7 +49,7 @@ const Leftside = (props) => {
 };
 
 const Container = styled.div`
-  //grid-area: leftSide;
+  //grid-area:  leftSide;
 `;
 
 const ArtCard = styled.div`
