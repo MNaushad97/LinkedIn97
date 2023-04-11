@@ -17,6 +17,21 @@ function InCenter() {
             <ShareBoxIcons icon="article-icon" iconText="Write article" />
           </div>
         </ShareBox>
+        <PostArea>
+          <Post>
+            <a>
+              <img src="images/user.svg" alt="" />
+              <div>
+                <span>Title</span>
+                <span>Info</span>
+                <span>Date</span>
+              </div>
+            </a>
+            <button>
+              <img src="images/threeDots.svg" alt="" />
+            </button>
+          </Post>
+        </PostArea>
       </Container>
     </>
   );
@@ -69,3 +84,6 @@ const ShareBox = styled(CommonCard)`
     }
   }
 `;
+
+const PostArea = styled(CommonCard)``;
+const Post = styled(CommonCard)``;
