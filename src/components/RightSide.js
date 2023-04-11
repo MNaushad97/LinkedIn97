@@ -11,10 +11,10 @@ function RightSide() {
         </Title>
 
         <FeedList />
-        <Recommendation>
+        {/* <Recommendation>
           View all recommendations
           <img src="/images/right-icon.svg" alt="" />
-        </Recommendation>
+        </Recommendation> */}
       </FollowCard>
       <BannerCard className="flex justify-center items-center ">
         <img

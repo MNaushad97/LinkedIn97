@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SocialCount from "./SocialCount";
 
 function Post() {
   return (
@@ -28,6 +29,7 @@ function Post() {
         <ImageToShare className="block relative mt-2 w-full bg-[#f9fafb] ">
           <img src="/logo512.png" className="bg-cover" alt="" />
         </ImageToShare>
+        <SocialCount />
       </PostArea>
     </>
   );
