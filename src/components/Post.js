@@ -26,6 +26,7 @@ function Post() {
         <Description className="px-4 overflow-hidden text-sm text-left text-black/90">
           Description is here
         </Description>
+
         <ImageToShare className="block relative mt-2 w-full bg-[#f9fafb] ">
           <img src="/logo512.png" className="bg-cover" alt="" />
         </ImageToShare>
