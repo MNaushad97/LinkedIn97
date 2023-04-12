@@ -1,90 +1,36 @@
 import styled from "styled-components";
+import NewsHeadlines from "./NewsHeadlines";
 
 function FeedList() {
   return (
     <>
-      <Feed className="flex justify-start ml-1.5">
+      <Feed className="flex justify-start">
         <ul className="list-disc mb-2">
-          <div className="flex my-3">
-            <span className="mr-3 font-bold ">•</span>
-            <div className="flex-col mt-1">
-              <a
-                href="https://hotel-97.web.app/"
-                target={"_blank"}
-                rel="noreferrer"
-                className=" font-bold text-black/75 text-sm"
-              >
-                Hotel97 got hosted on firebase
-              </a>
-              <p className="text-xs text-black/60 text-left font-medium mt-1">
-                2d ago • 5,376 readers
-              </p>
-            </div>
-          </div>
-          <div className="flex my-3">
-            <span className="mr-3 font-bold ">•</span>
-            <div className="flex-col mt-1">
-              <a
-                href="https://hotel-97.web.app/"
-                target={"_blank"}
-                rel="noreferrer"
-                className=" font-bold text-black/75 text-sm"
-              >
-                Hotel97 uses Google Map API
-              </a>
-              <p className="text-xs text-black/60 text-left font-medium mt-1">
-                2d ago • 4,410 readers
-              </p>
-            </div>
-          </div>
-          <div className="flex my-3">
-            <span className="mr-3 font-bold ">•</span>
-            <div className="flex-col mt-1">
-              <a
-                href="https://disney97-1205e.web.app/"
-                target={"_blank"}
-                rel="noreferrer"
-                className=" font-bold text-black/75 text-sm"
-              >
-                Disney97 fetches from Firebase
-              </a>
-              <p className="text-xs text-black/60 text-left font-medium mt-1">
-                2d ago • 4,348 readers
-              </p>
-            </div>
-          </div>
-          <div className="flex my-3">
-            <span className="mr-3 font-bold ">•</span>
-            <div className="flex-col mt-1">
-              <a
-                href="https://disney97-1205e.web.app/"
-                target={"_blank"}
-                rel="noreferrer"
-                className=" font-bold text-black/75 text-sm"
-              >
-                Disney97 uses Google's Auth
-              </a>
-              <p className="text-xs text-black/60 text-left font-medium mt-1">
-                1d ago • 3446 readers
-              </p>
-            </div>
-          </div>
-          <div className="flex my-3">
-            <span className="mr-3 font-bold ">•</span>
-            <div className="flex-col mt-1">
-              <a
-                href="https://food97-63ba5.web.app/"
-                target={"_blank"}
-                rel="noreferrer"
-                className=" font-bold text-black/75 text-sm"
-              >
-                Food97 stores order in realTime
-              </a>
-              <p className="text-xs text-black/60 text-left font-medium mt-1">
-                1d ago • 2,690 readers
-              </p>
-            </div>
-          </div>
+          <NewsHeadlines
+            title="Hotel97 got hosted on firebase"
+            readers="2d ago • 5,376 readers"
+            link="https://hotel-97.web.app/"
+          />
+          <NewsHeadlines
+            title="Hotel97 uses Google Map API"
+            readers="2d ago • 4,410 readers"
+            link="https://hotel-97.web.app/"
+          />
+          <NewsHeadlines
+            title="Disney97 fetches from Firebase"
+            readers="2d ago • 4,348 readers"
+            link="https://disney97-1205e.web.app/"
+          />
+          <NewsHeadlines
+            title="Disney97 uses Google's Auth"
+            readers="1d ago • 3446 readers"
+            link="https://disney97-1205e.web.app/"
+          />
+          <NewsHeadlines
+            title="Food97 stores order in realTime"
+            readers="1d ago • 2,690 readers"
+            link="https://food97-63ba5.web.app/"
+          />
         </ul>
       </Feed>
     </>
