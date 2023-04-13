@@ -4,17 +4,13 @@ import FeedList from "./FeedList";
 function RightSide() {
   return (
     <Container className="col-span-3">
-      <FollowCard className="h-[370px]">
-        <Title className=" inline-flex justify-between items-center text-base w-full text-black/75 font-semibold">
+      <FollowCard className="h-[334px]">
+        <Title className=" inline-flex justify-between items-center text-base w-full text-black/75 font-semibold p-3 pb-2.5">
           <h2>LinkedIn News</h2>
           <img src="/images/feed-icon.svg" alt="" />
         </Title>
 
         <FeedList />
-        {/* <Recommendation>
-          View all recommendations
-          <img src="/images/right-icon.svg" alt="" />
-        </Recommendation> */}
       </FollowCard>
       <BannerCard className="flex justify-center items-center ">
         <img
