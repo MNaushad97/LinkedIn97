@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 function NewsHeadlines({ link, title, readers }) {
   return (
     <>
@@ -7,14 +9,21 @@ function NewsHeadlines({ link, title, readers }) {
         rel="noreferrer"
         className=" text-black/75 text-sm flex flex-col mb-1 pb-3 pt-0.5 hover:bg-gray-200 w-full px-3 items-start "
       >
-        <li className=" ml-3">
+        <News className="ml-4 ">
           <div className="font-bold">{title}</div>
           <div className="text-xs text-black/60 text-left font- mt-1 ">
             {readers}
           </div>
-        </li>
+        </News>
       </a>
     </>
   );
 }
 export default NewsHeadlines;
+
+const News = styled.li`
+  ::marker {
+    font-weight: 600;
+    font-size: 18px;
+  }
+`;
