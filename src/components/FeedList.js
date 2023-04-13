@@ -4,8 +4,8 @@ import NewsHeadlines from "./NewsHeadlines";
 function FeedList() {
   return (
     <>
-      <Feed className="flex justify-start">
-        <ul className="list-disc mb-2">
+      <Feed className="flex justify-start ">
+        <ul className="list-disc w-full">
           <NewsHeadlines
             title="Hotel97 got hosted on firebase"
             readers="2d ago • 5,376 readers"
@@ -27,7 +27,7 @@ function FeedList() {
             link="https://disney97-1205e.web.app/"
           />
           <NewsHeadlines
-            title="Food97 stores order in realTime"
+            title="Food97 stores orders in realTime"
             readers="1d ago • 2,690 readers"
             link="https://food97-63ba5.web.app/"
           />
