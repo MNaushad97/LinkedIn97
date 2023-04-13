@@ -44,26 +44,8 @@ const FollowCard = styled.div`
   position: relative;
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 12px;
 `;
 const Title = styled.div``;
-
-const Avatar = styled.div`
-  background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
-`;
-
-const Recommendation = styled.a`
-  color: #0a66c2;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-`;
 
 const BannerCard = styled(FollowCard)`
   padding: 0;
@@ -71,3 +53,13 @@ const BannerCard = styled(FollowCard)`
     width: -webkit-fill-available;
   }
 `;
+
+//const Avatar = styled.div`
+//   background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 48px;
+//   height: 48px;
+//   margin-right: 8px;
+// `;
