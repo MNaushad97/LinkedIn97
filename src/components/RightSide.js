@@ -4,7 +4,7 @@ import FeedList from "./FeedList";
 function RightSide() {
   return (
     <Container className="col-span-3">
-      <FollowCard className="h-[334px]">
+      <FollowCard className="h-[320px]">
         <Title className=" inline-flex justify-between items-center text-base w-full text-black/75 font-semibold p-3 pb-2.5">
           <h2>LinkedIn News</h2>
           <img src="/images/feed-icon.svg" alt="" />
