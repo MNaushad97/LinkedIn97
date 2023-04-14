@@ -7,7 +7,7 @@ function NewsHeadlines({ link, title, readers }) {
         href={link}
         target={"_blank"}
         rel="noreferrer"
-        className=" text-black/75 text-sm flex flex-col mb-1 pb-3 pt-0.5 hover:bg-gray-200 w-full px-3 items-start "
+        className=" text-black/75 text-sm flex flex-col mb-1 pb-2 pt-0.5 hover:bg-gray-200/70 w-full px-3 items-start "
       >
         <News className="ml-4 ">
           <div className="font-bold">{title}</div>
