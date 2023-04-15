@@ -28,8 +28,8 @@ function Post() {
           Description is here
         </Description>
 
-        <ImageToShare className="block relative mt-2 w-full bg-[#f9fafb] ">
-          <img src="/logo512.png" className="bg-cover" alt="" />
+        <ImageToShare className="flex justify-center relative mt-2 w-full bg-[#f9fafb]">
+          <img src="/logo512.png" className="bg-cover  w-ful h-72" alt="" />
         </ImageToShare>
         <SocialCount />
         <hr className="mx-3"></hr>
