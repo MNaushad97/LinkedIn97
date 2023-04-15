@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import UserInfoSection from "./UserInfoSection";
+import UserInfoSection from "./molecules/UserInfoSection";
 
 const Leftside = (props) => {
   return (

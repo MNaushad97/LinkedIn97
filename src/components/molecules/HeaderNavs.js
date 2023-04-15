@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import NavIcon from "./NavIcon";
-import { Icon } from "./NavIcon";
+import NavIcon from "../atoms/NavIcon";
+import { Icon } from "../atoms/NavIcon";
 
 function HeaderNavs() {
   return (

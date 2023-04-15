@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import NewsHeadlines from "./NewsHeadlines";
+import NewsHeadlines from "../atoms/NewsHeadlines";
 
 function FeedList() {
   return (

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import HeaderNavs from "./HeaderNavs";
-import SearchBox from "./SearchBox";
+import HeaderNavs from "./molecules/HeaderNavs";
+import SearchBox from "./molecules/SearchBox";
 
 function Header() {
   return (

@@ -1,4 +1,4 @@
-import ReactionButton from "./ReactionButtons";
+import ReactionButton from "../atoms/ReactionButtons";
 
 function ReactionSection() {
   return (
