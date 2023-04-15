@@ -3,10 +3,12 @@ import ReactionButton from "./ReactionButtons";
 function ReactionSection() {
   return (
     <>
-      <ReactionButton icon="like-icon.png" flip />
-      <ReactionButton icon="comment-icon.svg" />
-      <ReactionButton icon="repost-icon.svg" />
-      <ReactionButton icon="send-icon.svg" />
+      <div className="grid grid-cols-4 gap-x-1 px-3 py-1">
+        <ReactionButton icon="like-icon.png" isPNG title="Like" />
+        <ReactionButton icon="comment-icon.svg" title="Comment" />
+        <ReactionButton icon="repost-icon.png" isPNG title="Repost" />
+        <ReactionButton icon="send-icon.svg" title="Send" />
+      </div>
     </>
   );
 }

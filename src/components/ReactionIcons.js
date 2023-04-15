@@ -1,7 +1,7 @@
 function ReactionIcons({ src }) {
   return (
     <>
-      <button>
+      <button className="-mr-1.5">
         <img src={src} alt="" />
       </button>
     </>

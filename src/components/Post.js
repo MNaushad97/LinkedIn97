@@ -5,7 +5,7 @@ import SocialCount from "./SocialCount";
 function Post() {
   return (
     <>
-      <PostArea className="mb-2 p-0 overflow-visible">
+      <PostArea className="p-0 overflow-visible">
         <Posts className="flex flex-nowrap items-center mb-2 pr-10 pt-3 pl-4">
           <a className="flex mr-3 grow overflow-hidden  no-underline ">
             <img
@@ -32,6 +32,7 @@ function Post() {
           <img src="/logo512.png" className="bg-cover" alt="" />
         </ImageToShare>
         <SocialCount />
+        <hr className="mx-3"></hr>
         <ReactionSection />
       </PostArea>
     </>

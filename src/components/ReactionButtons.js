@@ -1,12 +1,13 @@
-function ReactionButton({ icon, flip = false }) {
+function ReactionButton({ icon, isPNG = false, title }) {
   return (
     <>
-      <button>
+      <button className="flex justify-center text-[#666666] font-medium py-3 px-2 rounded-md hover:bg-gray-200/70">
         <img
           src={`/images/${icon}`}
           alt=""
-          className={`${flip && "-scale-x-100 w-8 h-8"}`}
+          className={`${isPNG && "w-6 h-6"} mr-2`}
         />
+        <span>{title}</span>
       </button>
     </>
   );
