@@ -5,7 +5,7 @@ function ReactionButton({ icon, isPNG = false, title }) {
         <img
           src={`/images/${icon}`}
           alt=""
-          className={`${isPNG && "w-6 h-6"} mr-2`}
+          className={`${isPNG && "w-6 h-6"} mr-1`}
         />
         <span>{title}</span>
       </button>
