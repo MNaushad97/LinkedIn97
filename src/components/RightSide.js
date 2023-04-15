@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FeedList from "./FeedList";
+import FeedList from "./molecules/FeedList";
 
 function RightSide() {
   return (

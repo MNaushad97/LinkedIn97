@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import Post from "./Post";
-import ShareBoxIcons from "./ShareBoxIcons";
-import SocialCount from "./SocialCount";
+import Post from "./molecules/Post";
+import ShareBoxIcons from "./atoms/ShareBoxIcons";
+import SocialCount from "./molecules/SocialCount";
 
 function InCenter() {
   return (

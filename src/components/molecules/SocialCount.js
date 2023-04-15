@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ReactionIcons from "./ReactionIcons";
+import ReactionIcons from "../atoms/ReactionIcons";
 
 function SocialCount() {
   return (
