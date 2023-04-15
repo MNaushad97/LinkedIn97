@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ReactionSection from "./ReactionSection";
 import SocialCount from "./SocialCount";
 
 function Post() {
@@ -31,6 +32,7 @@ function Post() {
           <img src="/logo512.png" className="bg-cover" alt="" />
         </ImageToShare>
         <SocialCount />
+        <ReactionSection />
       </PostArea>
     </>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import Post from "./Post";
 import ShareBoxIcons from "./ShareBoxIcons";
 import SocialCount from "./SocialCount";
@@ -19,6 +20,7 @@ function InCenter() {
             <ShareBoxIcons icon="article-icon" iconText="Write article" />
           </div>
         </ShareBox>
+
         <PostArea>
           <Post />
         </PostArea>
