@@ -1,8 +1,12 @@
-function ReactionButton({ icon }) {
+function ReactionButton({ icon, flip = false }) {
   return (
     <>
       <button>
-        <img src={`/images/${icon}.svg`} alt="" />
+        <img
+          src={`/images/${icon}`}
+          alt=""
+          className={`${flip && "-scale-x-100 w-8 h-8"}`}
+        />
       </button>
     </>
   );
