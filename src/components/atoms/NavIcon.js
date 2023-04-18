@@ -34,7 +34,6 @@ export const Icon = styled.li`
 
 /*
 const NavList = styled.li`
-  
   a {
     @media (max-width: 768px) {
       min-width: 70px;
@@ -49,7 +48,4 @@ const NavList = styled.li`
     }
   }
 `;
-
-
-
 */

@@ -5,7 +5,7 @@ import SearchBox from "./molecules/SearchBox";
 function Header() {
   return (
     <>
-      <HeaderContainer className="HeaderContainer bg-white px-6 w-full fixed top-0 left-0 z-10 border-b-[4px] border-solid border-black border-opacity-[0.08] ">
+      <HeaderContainer className="HeaderContainer bg-white px-6 w-full fixed top-0 left-0 z-10 border-b-[4px] border-solid border-black border-opacity-[0.08]">
         <HeaderContent className="HeaderContent flex items-center mx-auto my-1 min-h-full max-w-6xl">
           <Logo className="Logo mr-2 text-[0]">
             <a href="/home">
@@ -26,8 +26,6 @@ const HeaderContent = styled.div``;
 const Logo = styled.span``;
 
 /*
-;
-
 const Search = styled.div`
   opacity: 1;
   flex-grow: 1;
