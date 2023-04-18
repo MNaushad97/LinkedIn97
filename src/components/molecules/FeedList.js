@@ -4,7 +4,7 @@ import NewsHeadlines from "../atoms/NewsHeadlines";
 function FeedList() {
   return (
     <>
-      <Feed className="flex justify-start ">
+      <Feed className="flex justify-start">
         <ul className="list-disc w-full">
           <NewsHeadlines
             title="Hotel97 got hosted on firebase"
@@ -47,4 +47,4 @@ const Feed = styled.div`
 
 // • 1,690 readers India Inc’s pay hike report card 1d ago • 446 readers
 // Shorter wait forUS visas 2d ago • 4,648 readers Startups upbeat about hiring 2d ago • 2,410 readers Alibaba to split, ready spinoffs 2d ago •
-//               5,376 readers Show more
+// 5,376 readers Show more

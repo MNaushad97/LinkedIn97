@@ -4,7 +4,7 @@ import ReactionIcons from "../atoms/ReactionIcons";
 function SocialCount() {
   return (
     <>
-      <SocialCounts className=" flex justify-between items-center mx-4 py-2 text-center text-xs ">
+      <SocialCounts className="flex justify-between items-center mx-4 py-2 text-center text-xs">
         <div className="flex">
           <ReactionIcons src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" />
           <ReactionIcons src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22" />

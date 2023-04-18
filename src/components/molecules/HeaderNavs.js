@@ -99,7 +99,3 @@ const UserNav = styled(Icon)`
 const Work = styled(UserNav)`
   border-left: 1px solid rgba(0, 0, 0, 0.08);
 `;
-/*
-
-
-*/
