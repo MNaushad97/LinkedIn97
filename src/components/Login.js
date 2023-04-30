@@ -1,6 +1,9 @@
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { signInAPI } from "../features/user/userSlice";
 
 function Login() {
+  const dispatch = useDispatch();
   return (
     <>
       <Container>
@@ -19,7 +22,7 @@ function Login() {
             <img src="/images/login-doodle.svg" alt="" />
           </Hero>
           <Form>
-            <Google>
+            <Google onClick={() => dispatch(signInAPI())}>
               <img src="/images/google.svg" alt="" />
               Sign in with Google
             </Google>
