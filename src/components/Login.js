@@ -1,10 +1,22 @@
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { setUserData } from "../features/user/userSlice";
 import { auth, provider } from "../firebase/firebase";
 
 function Login() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUser(user);
+        navigate("/home");
+      }
+    });
+  }, []);
 
   function handleAuthentication() {
     auth

@@ -1,8 +1,27 @@
 import styled from "styled-components";
 import NavIcon from "../atoms/NavIcon";
 import { Icon } from "../atoms/NavIcon";
+import { useDispatch, useSelector } from "react-redux";
+import { signOutUser } from "../../features/user/userSlice";
+import { auth } from "../../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 
 function HeaderNavs() {
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.userState);
+  console.log("user:", user);
+  const navigate = useNavigate();
+
+  function handleAuthentication() {
+    auth
+      .signOut()
+      .then(() => {
+        dispatch(signOutUser());
+        navigate("/");
+      })
+      .catch((err) => alert(err.message));
+  }
+
   return (
     <>
       <Nav className=" Nav block  ">
@@ -14,14 +33,20 @@ function HeaderNavs() {
           <NavIcon img="notifications.svg" title="Notifications" />
           <UserNav>
             <a>
-              <img src="/images/user.svg" alt="" />
+              <img
+                src={`${user.photo ? user.photo : "/images/user.svg"}`}
+                alt=""
+              />
               <span>
                 Me
                 <img src="/images/down-icon.svg" alt="" />
               </span>
             </a>
 
-            <SignOut className="absolute top-11 bg-white rounded-r-md rounded-l-md w-24 h-10 text-base text-center hidden duration-150">
+            <SignOut
+              className="absolute top-11 bg-white rounded-r-md rounded-l-md w-24 h-10 text-base text-center hidden duration-150"
+              onClick={handleAuthentication}
+            >
               <a>Sign Out</a>
             </SignOut>
           </UserNav>
