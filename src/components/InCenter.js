@@ -1,15 +1,20 @@
 import styled from "styled-components";
-
+import { useSelector } from "react-redux";
 import Post from "./molecules/Post";
 import ShareBoxIcons from "./atoms/ShareBoxIcons";
 
 function InCenter() {
+  const user = useSelector((state) => state.userState);
+  console.log("user:", user);
   return (
     <>
       <Container className="sm:col-span-9 lg:col-span-6">
         <ShareBox>
           <div className="ShareBoxDiv flex items-center px-4 pt-2">
-            <img src="/images/user.svg" alt="" />
+            <img
+              src={`${user.photo ? user.photo : "/images/user.svg"}`}
+              alt=""
+            />
             <button>Start a post</button>
           </div>
           <div className="flex flex-wrap justify-around pb-2">

@@ -1,12 +1,20 @@
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 function UserInfoSection() {
+  const user = useSelector((state) => state.userState);
+  console.log("user:", user);
   return (
     <>
       <UserInfo className="px-3 pt-3 pb-4 break-words">
         <CardBackground className="bg-[url(/images/card-bg.svg)] h-20 -mt-3 -mx-3 mb-0 bg-cover" />
         <a>
-          <Photo className="bg-[url(/images/default-profileImg.svg)] -mt-9 mx-auto mb-3 border-2 border-solid border-white rounded-[50%] w-[5rem] h-[5rem] lg:w-28 lg:h-28 box-border bg-clip-content" />
+          <Photo
+            className={`bg-[url(${
+              user.photo ? user.photo : "/images/default-profileImg.svg"
+            })] bg-cover
+             -mt-9 mx-auto mb-3 border-2 border-solid border-white rounded-[50%] w-[5rem] h-[5rem] lg:w-28 lg:h-28 box-border bg-clip-content`}
+          />
           <Link className="text-base leading-6 font-semibold text-black/90">
             Welcome There!
           </Link>
