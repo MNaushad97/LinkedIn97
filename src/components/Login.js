@@ -1,9 +1,31 @@
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
-import { signInAPI } from "../features/user/userSlice";
+import { setUserData } from "../features/user/userSlice";
+import { auth, provider } from "../firebase/firebase";
 
 function Login() {
   const dispatch = useDispatch();
+
+  function handleAuthentication() {
+    auth
+      .signInWithPopup(provider)
+      .then((result) => {
+        setUser(result.user);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  }
+
+  const setUser = (user) => {
+    dispatch(
+      setUserData({
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL,
+      })
+    );
+  };
   return (
     <>
       <Container>
@@ -22,7 +44,7 @@ function Login() {
             <img src="/images/login-doodle.svg" alt="" />
           </Hero>
           <Form>
-            <Google onClick={() => dispatch(signInAPI())}>
+            <Google onClick={handleAuthentication}>
               <img src="/images/google.svg" alt="" />
               Sign in with Google
             </Google>
