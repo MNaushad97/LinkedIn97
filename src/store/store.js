@@ -1,2 +1,9 @@
-import { createStore, applyMiddleware } from "redux";
-import { rootReducer } from "../reducers/rootReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "../features/user/userSlice";
+
+const store = configureStore({
+  reducer: {
+    userState: userReducer,
+  },
+});
+export default store;
