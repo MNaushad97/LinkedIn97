@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import ReactionSection from "./ReactionSection";
 import SocialCount from "./SocialCount";
+import { useSelector } from "react-redux";
 
 function Post() {
+  const user = useSelector((state) => state.userState);
   return (
     <>
       <PostArea className="p-0 overflow-visible">
@@ -10,7 +12,7 @@ function Post() {
           <a className="flex mr-3 grow overflow-hidden  no-underline ">
             <img
               className="w-12 h-12 rounded-full"
-              src="images/user.svg"
+              src={`${user?.photo ? user?.photo : "images/user.svg"}`}
               alt=""
             />
             <div className="flex flex-col  ml-2 overflow-hidden">
