@@ -16,7 +16,7 @@ function UserInfoSection() {
              -mt-9 mx-auto mb-3 border-2 border-solid border-white rounded-[50%] w-[5rem] h-[5rem] lg:w-28 lg:h-28 box-border bg-clip-content`}
           />
           <Link className="text-base leading-6 font-semibold text-black/90">
-            Welcome There!
+            Welcome {user?.name}
           </Link>
         </a>
         <a>
